@@ -22,3 +22,8 @@ def root():
         extrema=extrema,
         station=station.description,
         ), 200
+
+
+@THRASHTIDE.route("/ping", methods=["GET"])
+def ping():
+    return 'pong', 200
